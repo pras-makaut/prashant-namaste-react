@@ -1,30 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-/**
- *
- * <div id="parent">
- *      <div id="child">
- *          <h1>This is h1 tag</h1>
- *      </div>
- * </div>
- */
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "This is h1 tag"),
-    React.createElement("h2", {}, "This is h2 tag"),
-  ])
+const ele = <span>Prashant Ranjan</span>;
+
+// JSX- html LIKE OR XML LIKE SYNTAX
+// JSX => Babel transpiles it to React.createElement => object => HTMLelement(render)
+const Title = () => (
+  <h1 className="head">
+    {ele}
+    Nmanste react!
+  </h1>
 );
 
-const heading = React.createElement(
-  "h1",
-  { className: "heading" },
-  "Hello World from React!"
+// React Functional Component
+const HeadingComponent = () => (
+  <React.Fragment>
+    <div className="header">
+      <Title />
+      <h1>Namaste Reactdjksjdjsdjkdsjj</h1>
+    </div>
+    <div>
+      <h1>jfdjsj</h1>
+    </div>
+  </React.Fragment>
 );
-console.log(heading); //object
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 console.log(root);
-root.render(parent);
+root.render(<HeadingComponent />);
