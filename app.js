@@ -1,58 +1,2001 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// const ele = <span>Prashant Ranjan</span>;
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logoContainer">
+        <img
+          className="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgBi7E1isblsGUY9Bupe1WDKGxFyCiUJIk4g&usqp=CAU"
+          alt=""
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+const resObj = [
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "137887",
+      name: "Manbhawan Sweets",
+      uuid: "173edee0-eab6-4fd0-9d62-8de521126b0c",
+      city: "79",
+      area: "Kankarbagh",
+      totalRatingsString: "5000+ ratings",
+      cloudinaryImageId: "lhkoovaajfufwkeommiz",
+      cuisines: [
+        "Sweets",
+        "Snacks",
+        "South Indian",
+        "Chaat",
+        "Bakery",
+        "Pan-Asian",
+      ],
+      tags: [],
+      costForTwo: 15000,
+      costForTwoString: "₹150 FOR TWO",
+      deliveryTime: 28,
+      minDeliveryTime: 28,
+      maxDeliveryTime: 28,
+      slaString: "28 MINS",
+      lastMileTravel: 4.400000095367432,
+      slugs: {
+        restaurant: "manbhawan-sweets-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address:
+        "Sundar apartment, bhootnath more, near NMCH kankarbagh,patna 800026",
+      locality: "Chitragupta Nagar",
+      parentId: 131434,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "60% off",
+        shortDescriptionList: [
+          {
+            meta: "60% off | Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "60% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 2400,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 2400,
+        message: "",
+        title: "Delivery Charge",
+        amount: "2400",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6440020~p=1~eid=00000187-7a38-0a09-07a6-2e0100b1017f",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "4.4 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "137887",
+        deliveryTime: 28,
+        minDeliveryTime: 28,
+        maxDeliveryTime: 28,
+        lastMileTravel: 4.400000095367432,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "4.0",
+      totalRatings: 5000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "152335",
+      name: "Hungry Hope",
+      uuid: "9ef51d0d-3f4a-49c8-8601-3c3b16f816e5",
+      city: "79",
+      area: "Kankarbagh",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "cv4hmfd42qioasn0tqtd",
+      cuisines: ["Indian", "Chinese"],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 27,
+      minDeliveryTime: 27,
+      maxDeliveryTime: 27,
+      slaString: "27 MINS",
+      lastMileTravel: 2.4000000953674316,
+      slugs: {
+        restaurant: "hungry-hope-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "Shila Ram Complex, Kankarbagh, Patna",
+      locality: "RBI Flats Colony",
+      parentId: 104720,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "60% off",
+        shortDescriptionList: [
+          {
+            meta: "60% off | Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "60% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "2.4 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "152335",
+        deliveryTime: 27,
+        minDeliveryTime: 27,
+        maxDeliveryTime: 27,
+        lastMileTravel: 2.4000000953674316,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.7",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "242395",
+      name: "Ram Babu Restaurant",
+      uuid: "d681e274-d851-4cd9-ba53-8cfe1810572d",
+      city: "79",
+      area: "Kankarbagh",
+      totalRatingsString: "5000+ ratings",
+      cloudinaryImageId: "mq1vlwbzjanzdeukja3d",
+      cuisines: ["Chinese", "North Indian", "Biryani"],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 23,
+      minDeliveryTime: 23,
+      maxDeliveryTime: 23,
+      slaString: "23 MINS",
+      lastMileTravel: 0.6000000238418579,
+      slugs: {
+        restaurant: "ram-babu-restaurant-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "Chandmadi road,Kankarbagh,patna - 800020",
+      locality: "Chandmadi road",
+      parentId: 166239,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "60% off",
+        shortDescriptionList: [
+          {
+            meta: "60% off | Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "60% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "0.6 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "242395",
+        deliveryTime: 23,
+        minDeliveryTime: 23,
+        maxDeliveryTime: 23,
+        lastMileTravel: 0.6000000238418579,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.5",
+      totalRatings: 5000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "308385",
+      name: "0612 ROAD CHEF ( Open Air )",
+      uuid: "3403edad-b00d-4c44-8d58-106b1a724ded",
+      city: "79",
+      area: "Kidwaipuri",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "a6kxfsntpbcygshv5sgp",
+      cuisines: ["Indian", "Chinese", "South Indian", "Biryani"],
+      tags: [],
+      costForTwo: 20000,
+      costForTwoString: "₹200 FOR TWO",
+      deliveryTime: 39,
+      minDeliveryTime: 39,
+      maxDeliveryTime: 39,
+      slaString: "39 MINS",
+      lastMileTravel: 4.300000190734863,
+      slugs: {
+        restaurant: "0612-road-chef-srikrishnapuri-srikrishnapuri",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "Boring Road Behind Karlo showroom",
+      locality: "Boring Canal Road",
+      parentId: 22680,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "60% off",
+        shortDescriptionList: [
+          {
+            meta: "60% off | Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "60% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 2400,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 2400,
+        message: "",
+        title: "Delivery Charge",
+        amount: "2400",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6440001~p=4~eid=00000187-7a38-0a09-07a6-2e0200b1041c",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "4.3 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "308385",
+        deliveryTime: 39,
+        minDeliveryTime: 39,
+        maxDeliveryTime: 39,
+        lastMileTravel: 4.300000190734863,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "4.0",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "246443",
+      name: "HARILAL (Kankarbagh)",
+      uuid: "ad5ff1d4-5533-4cec-9ca0-3ec0a298dbbb",
+      city: "79",
+      area: "Kankarbagh",
+      totalRatingsString: "5000+ ratings",
+      cloudinaryImageId: "cb3elcisgcyajxfsom43",
+      cuisines: ["Bakery", "Sweets", "Indian"],
+      tags: [],
+      costForTwo: 15000,
+      costForTwoString: "₹150 FOR TWO",
+      deliveryTime: 30,
+      minDeliveryTime: 30,
+      maxDeliveryTime: 30,
+      slaString: "30 MINS",
+      lastMileTravel: 2.200000047683716,
+      slugs: {
+        restaurant: "harilal's-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "gayatri mandir road, kankarbagh colony",
+      locality: "Gayatri Mandir Road",
+      parentId: 22072,
+      unserviceable: false,
+      veg: true,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "2.2 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "246443",
+        deliveryTime: 30,
+        minDeliveryTime: 30,
+        maxDeliveryTime: 30,
+        lastMileTravel: 2.200000047683716,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "4.2",
+      totalRatings: 5000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "591085",
+      name: " 0612 Road Chef ( Kankarbagh)",
+      uuid: "60f81790-ef98-41f5-b195-1a0c9fca266f",
+      city: "79",
+      area: "Kankarbagh",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "qo1ypqreeaulytd7cmgr",
+      cuisines: ["Indian", "Tandoor", "Chinese", "Biryani"],
+      tags: [],
+      costForTwo: 20000,
+      costForTwoString: "₹200 FOR TWO",
+      deliveryTime: 26,
+      minDeliveryTime: 26,
+      maxDeliveryTime: 26,
+      slaString: "26 MINS",
+      lastMileTravel: 1.2999999523162842,
+      slugs: {
+        restaurant: "0612-road-chef-online-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "SANJAY NAGAR ROAD NO.10 NEAR BY PASS ROAD KANKARBAGH",
+      locality: "Sanjay Nagar Road",
+      parentId: 353495,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "60% off",
+        shortDescriptionList: [
+          {
+            meta: "60% off | Use STEALDEAL",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code STEALDEAL",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "60% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use STEALDEAL",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code STEALDEAL",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "1.2 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "591085",
+        deliveryTime: 26,
+        minDeliveryTime: 26,
+        maxDeliveryTime: 26,
+        lastMileTravel: 1.2999999523162842,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "4.1",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "254947",
+      name: "Biryani Mahal",
+      uuid: "c7cf4501-2725-4a61-ada7-64fc7fc5d75a",
+      city: "79",
+      area: "Khajpura",
+      totalRatingsString: "5000+ ratings",
+      cloudinaryImageId: "wkjhwkygizw46g9apmq2",
+      cuisines: ["Biryani", "Mughlai"],
+      tags: [],
+      costForTwo: 15000,
+      costForTwoString: "₹150 FOR TWO",
+      deliveryTime: 36,
+      minDeliveryTime: 36,
+      maxDeliveryTime: 36,
+      slaString: "36 MINS",
+      lastMileTravel: 7.400000095367432,
+      slugs: {
+        restaurant: "biryani-mahal-khajpura-khajpura",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "AASHIANA DIGHA ROAD",
+      locality: "Aashiana Digha Road",
+      parentId: 9902,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 4200,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 4200,
+        message: "",
+        title: "Delivery Charge",
+        amount: "4200",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6477836~p=7~eid=00000187-7a38-0a09-07a6-2e0300b10724",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "7.4 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "254947",
+        deliveryTime: 36,
+        minDeliveryTime: 36,
+        maxDeliveryTime: 36,
+        lastMileTravel: 7.400000095367432,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "3.8",
+      totalRatings: 5000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "118491",
+      name: "Cake Palace",
+      uuid: "abfb5abd-5eab-40eb-8007-507e8d81e7fc",
+      city: "79",
+      area: "Golambar",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "pxaaijls6qfgpwzvyl72",
+      cuisines: ["Desserts", "Bakery"],
+      tags: [],
+      costForTwo: 25000,
+      costForTwoString: "₹250 FOR TWO",
+      deliveryTime: 30,
+      minDeliveryTime: 30,
+      maxDeliveryTime: 30,
+      slaString: "30 MINS",
+      lastMileTravel: 3.799999952316284,
+      slugs: {
+        restaurant: "cake-palace-golamber-golambar",
+        city: "patna",
+      },
+      cityState: "79",
+      address:
+        "janak kishore road, near sudha Booth, beside Hindi sahitya Sammelan, kadamkuan, patna",
+      locality: "Janak Kishore Road",
+      parentId: 11241,
+      unserviceable: false,
+      veg: true,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "Free cup pudding",
+        shortDescriptionList: [
+          {
+            meta: "Free cup pudding on orders above ₹349",
+            discountType: "Freebie",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "Free cup pudding on orders above ₹349",
+            discountType: "Freebie",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "",
+        shortDescriptionList: [
+          {
+            meta: "Free cup pudding",
+            discountType: "Freebie",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "Free cup pudding on orders above ₹349",
+            discountType: "Freebie",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "3.7 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "118491",
+        deliveryTime: 30,
+        minDeliveryTime: 30,
+        maxDeliveryTime: 30,
+        lastMileTravel: 3.799999952316284,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.7",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "88781",
+      name: "Sujata Family Restaurant",
+      uuid: "3ac5f62e-fca8-4c33-8fdc-4603804bb14a",
+      city: "79",
+      area: "Fraser Road",
+      totalRatingsString: "10000+ ratings",
+      cloudinaryImageId: "np13tsnfrxylkrk1ykm5",
+      cuisines: ["Mughlai", "Chinese", "North Indian"],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 28,
+      minDeliveryTime: 28,
+      maxDeliveryTime: 28,
+      slaString: "28 MINS",
+      lastMileTravel: 2.700000047683716,
+      slugs: {
+        restaurant: "sujata-family-restaurant-fraser-road-fraser-road",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "Hotel Mayur, Fraser Road Area, Patna",
+      locality: "",
+      parentId: 196672,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "60% off",
+        shortDescriptionList: [
+          {
+            meta: "60% off | Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "60% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "2.7 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "88781",
+        deliveryTime: 28,
+        minDeliveryTime: 28,
+        maxDeliveryTime: 28,
+        lastMileTravel: 2.700000047683716,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.5",
+      totalRatings: 10000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "98494",
+      name: "Dhaba & Kabab wala",
+      uuid: "4de6df7f-a838-4163-995b-bf436e09c28f",
+      city: "79",
+      area: "Bankman Colony",
+      totalRatingsString: "5000+ ratings",
+      cloudinaryImageId: "w8g1dmoovqggbwhjc2rt",
+      cuisines: ["Indian", "Chinese"],
+      tags: [],
+      costForTwo: 20000,
+      costForTwoString: "₹200 FOR TWO",
+      deliveryTime: 30,
+      minDeliveryTime: 30,
+      maxDeliveryTime: 30,
+      slaString: "30 MINS",
+      lastMileTravel: 2.200000047683716,
+      slugs: {
+        restaurant: "dhaba-kabab-wala-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "A-244, PC colony, Near Shri Ram Hospital, Kankarbagh ,panta 20",
+      locality: "PC Colony",
+      parentId: 71819,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "40% off",
+        shortDescriptionList: [
+          {
+            meta: "40% off | Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "40% off up to ₹80 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "40% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "40% off up to ₹80 | Use code TRYNEW",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6443710~p=10~eid=00000187-7a38-0a09-07a6-2e0400b10a69",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "2.2 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "98494",
+        deliveryTime: 30,
+        minDeliveryTime: 30,
+        maxDeliveryTime: 30,
+        lastMileTravel: 2.200000047683716,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "3.4",
+      totalRatings: 5000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "441839",
+      name: "La Pino'z Pizza",
+      uuid: "a6382cdb-f7f5-4169-8333-145c33533de7",
+      city: "79",
+      area: "Phulwari Sharif",
+      totalRatingsString: "1000+ ratings",
+      cloudinaryImageId: "qamlqozfw2h479ggimis",
+      cuisines: ["Pizzas", "North Indian"],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 41,
+      minDeliveryTime: 41,
+      maxDeliveryTime: 41,
+      slaString: "41 MINS",
+      lastMileTravel: 7.099999904632568,
+      slugs: {
+        restaurant: "la-pinoz-pizza-phulwari-sharif-phulwari-sharif",
+        city: "patna",
+      },
+      cityState: "79",
+      address:
+        "Ground Floor, Pratimalaya, Purnendu Nagar, Phulwarisharif PO & PS Phulwari Sharif, Patna - 801505",
+      locality: "Patliputra Colony",
+      parentId: 4961,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "FLAT125 off",
+        shortDescriptionList: [
+          {
+            meta: "FLAT125 off | Use FLATDEAL",
+            discountType: "Flat",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "FLAT125 off | Use FLATDEAL",
+            discountType: "Flat",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "₹125 OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use FLATDEAL",
+            discountType: "Flat",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "FLAT125 off | Use FLATDEAL",
+            discountType: "Flat",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 4200,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 4200,
+        message: "",
+        title: "Delivery Charge",
+        amount: "4200",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6456377~p=31~eid=00000187-7a38-0a09-07a6-2e0b00b11f60",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "7 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "441839",
+        deliveryTime: 41,
+        minDeliveryTime: 41,
+        maxDeliveryTime: 41,
+        lastMileTravel: 7.099999904632568,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "3.7",
+      totalRatings: 1000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "453850",
+      name: "D-Zaprino",
+      uuid: "620c9b22-b9ec-41fc-b60d-fa2c1193dfff",
+      city: "79",
+      area: "Mithapur",
+      totalRatingsString: "500+ ratings",
+      cloudinaryImageId: "r3jtq0ipwol9tby1khja",
+      cuisines: ["Continental", "Desserts", "Beverages"],
+      tags: [],
+      costForTwo: 20000,
+      costForTwoString: "₹200 FOR TWO",
+      deliveryTime: 27,
+      minDeliveryTime: 27,
+      maxDeliveryTime: 27,
+      slaString: "27 MINS",
+      lastMileTravel: 0.6000000238418579,
+      slugs: {
+        restaurant: "d-zaprino-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address: "2, Karbhigya, Old Bus stand road, Opp to power house, Patna,",
+      locality: "Chriyantand",
+      parentId: 5656,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "10% off",
+        shortDescriptionList: [
+          {
+            meta: "10% off | Use PARTY",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "10% off | Use code PARTY",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "10% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use PARTY",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "10% off | Use code PARTY",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "0.6 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "453850",
+        deliveryTime: 27,
+        minDeliveryTime: 27,
+        maxDeliveryTime: 27,
+        lastMileTravel: 0.6000000238418579,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "3.9",
+      totalRatings: 500,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "290590",
+      name: "Kwality Walls Frozen Dessert and Ice Cream Shop",
+      uuid: "819fc50a-a342-4d1d-89de-be05af5ffb17",
+      city: "79",
+      area: "Kankarbagh",
+      totalRatingsString: "5000+ ratings",
+      cloudinaryImageId: "iehiemnocsdvcqyyyw6v",
+      cuisines: ["Desserts", "Ice Cream", "Ice Cream Cakes"],
+      tags: [],
+      costForTwo: 10000,
+      costForTwoString: "₹100 FOR TWO",
+      deliveryTime: 23,
+      minDeliveryTime: 23,
+      maxDeliveryTime: 23,
+      slaString: "23 MINS",
+      lastMileTravel: 3,
+      slugs: {
+        restaurant: "kwality-walls-khajpura-khajpura-5",
+        city: "patna",
+      },
+      cityState: "79",
+      address:
+        "N-22, Tilak nagar, 8 building North to Munna Chowk, Kankarbagh Patna 80020.",
+      locality: "Tilak Nagar",
+      parentId: 582,
+      unserviceable: false,
+      veg: true,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6465398~p=13~eid=00000187-7a38-0a09-07a6-2e0500b10d70",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "3 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "290590",
+        deliveryTime: 23,
+        minDeliveryTime: 23,
+        maxDeliveryTime: 23,
+        lastMileTravel: 3,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "4.7",
+      totalRatings: 5000,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "627029",
+      name: "Dangus",
+      uuid: "cfc7b01e-b8d8-4736-ba32-ef96e36541ee",
+      city: "79",
+      area: "Mithapur",
+      totalRatingsString: "20+ ratings",
+      cloudinaryImageId: "zhotf556xl0drtta2sv8",
+      cuisines: ["Beverages", "Fast Food", "Snacks"],
+      tags: [],
+      costForTwo: 15000,
+      costForTwoString: "₹150 FOR TWO",
+      deliveryTime: 22,
+      minDeliveryTime: 22,
+      maxDeliveryTime: 22,
+      slaString: "22 MINS",
+      lastMileTravel: 0.30000001192092896,
+      slugs: {
+        restaurant: "dangus-kankarbagh-kankarbagh",
+        city: "patna",
+      },
+      cityState: "79",
+      address:
+        "OPP- CHANAKYA LAW COLLEGE SAMTA PATH MITHAPUR BUS STAND ROAD PS- JAKANPUR PO- G.P.O PATNA, Patna Sadar, Patna",
+      locality: "Samta Path",
+      parentId: 68363,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "0.3 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "627029",
+        deliveryTime: 22,
+        minDeliveryTime: 22,
+        maxDeliveryTime: 22,
+        lastMileTravel: 0.30000001192092896,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: false,
+      avgRating: "4.1",
+      totalRatings: 20,
+      new: false,
+    },
+    subtype: "basic",
+  },
+  {
+    type: "restaurant",
+    data: {
+      type: "F",
+      id: "622618",
+      name: "Wow! China",
+      uuid: "e2a61a4c-1ae0-4505-976e-b294a3535642",
+      city: "79",
+      area: "Lodipur",
+      totalRatingsString: "100+ ratings",
+      cloudinaryImageId: "qakv5jusmgttqggnetbr",
+      cuisines: [
+        "Tibetan",
+        "Chinese",
+        "Asian",
+        "Snacks",
+        "Continental",
+        "Desserts",
+        "Beverages",
+      ],
+      tags: [],
+      costForTwo: 30000,
+      costForTwoString: "₹300 FOR TWO",
+      deliveryTime: 41,
+      minDeliveryTime: 41,
+      maxDeliveryTime: 41,
+      slaString: "41 MINS",
+      lastMileTravel: 3,
+      slugs: {
+        restaurant: "wow-china-christian-colony-fraser-road",
+        city: "patna",
+      },
+      cityState: "79",
+      address:
+        "J49M+4X4, City centre mall, Christian Colony, Lodipur, Patna, Bihar 800001",
+      locality: "City Centre Mall",
+      parentId: 226836,
+      unserviceable: false,
+      veg: false,
+      select: false,
+      favorite: false,
+      tradeCampaignHeaders: [],
+      aggregatedDiscountInfo: {
+        header: "60% off",
+        shortDescriptionList: [
+          {
+            meta: "60% off | Use SPECIALS",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 on select items | Use code SPECIALS",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      aggregatedDiscountInfoV2: {
+        header: "60% OFF",
+        shortDescriptionList: [
+          {
+            meta: "Use SPECIALS",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        descriptionList: [
+          {
+            meta: "60% off up to ₹120 on select items | Use code SPECIALS",
+            discountType: "Percentage",
+            operationType: "RESTAURANT",
+          },
+        ],
+        subHeader: "",
+        headerType: 0,
+        superFreedel: "",
+      },
+      ribbon: [
+        {
+          type: "PROMOTED",
+        },
+      ],
+      chain: [],
+      feeDetails: {
+        fees: [
+          {
+            name: "distance",
+            fee: 1900,
+            message: "",
+          },
+          {
+            name: "time",
+            fee: 0,
+            message: "",
+          },
+          {
+            name: "special",
+            fee: 0,
+            message: "",
+          },
+        ],
+        totalFees: 1900,
+        message: "",
+        title: "Delivery Charge",
+        amount: "1900",
+        icon: "",
+      },
+      availability: {
+        opened: true,
+        nextOpenMessage: "",
+        nextCloseMessage: "",
+      },
+      longDistanceEnabled: 0,
+      rainMode: "NONE",
+      thirdPartyAddress: false,
+      thirdPartyVendor: "",
+      adTrackingID: "cid=6398044~p=16~eid=00000187-7a38-0a09-07a6-2e0600b11060",
+      badges: {
+        imageBased: [],
+        textBased: [],
+        textExtendedBadges: [],
+      },
+      lastMileTravelString: "3 kms",
+      hasSurge: false,
+      sla: {
+        restaurantId: "622618",
+        deliveryTime: 41,
+        minDeliveryTime: 41,
+        maxDeliveryTime: 41,
+        lastMileTravel: 3,
+        lastMileDistance: 0,
+        serviceability: "SERVICEABLE",
+        rainMode: "NONE",
+        longDistance: "NOT_LONG_DISTANCE",
+        preferentialService: false,
+        iconType: "EMPTY",
+      },
+      promoted: true,
+      avgRating: "3.7",
+      totalRatings: 100,
+      new: false,
+    },
+    subtype: "basic",
+  },
+];
+const RestaurentCard = (props) => {
+  const { resData } = props;
 
-// // JSX- html LIKE OR XML LIKE SYNTAX
-// // JSX => Babel transpiles it to React.createElement => object => HTMLelement(render)
-// const Title = () => (
-//   <h1 className="head">
-//     {ele}
-//     Nmanste react!
-//   </h1>
-// );
-
-// // React Functional Component
-// const HeadingComponent = () => (
-//   <React.Fragment>
-//     <div className="header">
-//       <Title />
-//       <h1>Namaste Reactdjksjdjsdjkdsjj</h1>
-//     </div>
-//     <div>
-//       <h1>jfdjsj</h1>
-//     </div>
-//   </React.Fragment>
-// );
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// console.log(root);
-// root.render(<HeadingComponent />);
-
-const Header = () => (
-  <div id="header">
-    <div id="logo">
+  const {
+    name,
+    cloudinaryImageId,
+    cuisines,
+    avgRating,
+    costForTwo,
+    deliveryTime,
+  } = resData?.data;
+  return (
+    <div className="res-card">
       <img
-        src={require("./Images/react.png")}
-        style={{ height: "3rem" }}
+        className="res-card-image"
+        src={
+          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+          cloudinaryImageId
+        }
         alt=""
       />
+      <h3>{name}</h3>
+      <h4>{cuisines.join(", ")}</h4>
+      <h4>{avgRating} Stars</h4>
+      <h4>{costForTwo / 100}</h4>
+      <h4>{deliveryTime} Minutes</h4>
     </div>
-    <div id="search_bar">
-      <input type="text" placeholder="Search.." style={{ height: "3rem" }} />
-      <button type="submit" style={{ height: "3.3rem" }}>
-        <i class="fa fa-search"></i>
-      </button>
+  );
+};
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="serach">Search</div>
+      <div className="res-container">
+        {resObj.map((ele, idx) => (
+          <RestaurentCard key={ele.data.id} resData={ele} />
+        ))}
+        {/* <RestaurentCard resName="KFC" cusins="Burger Fried Chicken" /> */}
+      </div>
     </div>
-    <div id="icon">
-      <img
-        src={require("./Images/search-for-user-interface-symbol.png")}
-        style={{ height: "3rem" }}
-        alt=""
-      />
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
     </div>
-  </div>
-);
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(root);
-root.render(<Header />);
+root.render(<AppLayout />);
