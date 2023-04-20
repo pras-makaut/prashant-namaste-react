@@ -2,6 +2,7 @@ import RestaurentCard from "./RestaurentCard";
 import resObj from "../utils/mockdata";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function filterData(searchText, restaurants) {
   const filterData = restaurants.filter((restaurant) =>
@@ -24,7 +25,6 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.5940499&lng=85.1376051&page_type=DESKTOP_WEB_LISTING#"
     );
     const json = await data.json();
-    console.log(json);
     setListOfRestaurent(json?.data?.cards[2]?.data?.data?.cards);
     setFilterRestaurent(json?.data?.cards[2]?.data?.data?.cards);
   }
@@ -84,7 +84,10 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filterRestaurent.map((ele, idx) => (
-          <RestaurentCard key={ele.data.id} resData={ele} />
+          <Link to={"/restaurent/" + ele.data.id} key={ele.data.id}>
+            {" "}
+            <RestaurentCard key={ele.data.id} resData={ele} />
+          </Link>
         ))}
         {/* <RestaurentCard resName="KFC" cusins="Burger Fried Chicken" /> */}
       </div>
