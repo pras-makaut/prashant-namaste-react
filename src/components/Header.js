@@ -1,38 +1,44 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constant";
 import { Link } from "react-router-dom";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [logIn, setLogIn] = useState(true);
+  const { user } = useContext(UserContext);
+
   return (
-    <div className="header">
+    <div className="flex justify-between bg-pink-50">
       <div className="logoContainer">
-        <img className="logo" src={LOGO_URL} alt="" />
+        <img className="h-28 p-2 w-auto" src={LOGO_URL} alt="" />
       </div>
       <div className="nav-items">
-        <ul>
-          <li>
+        <ul className="flex py-10">
+          <li className="px-2">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="px-2">
             <Link to="/about">About Us</Link>
           </li>
-          <li>
+          <li className="px-2">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>Cart</li>
-          <li>
+          <li className="px-2">Cart</li>
+          <li className="px-2">
             <Link to="/instamart">Instamart</Link>
           </li>
         </ul>
       </div>
+      {user.name}
       {logIn === true ? (
-        <button onClick={() => setLogIn(false)}>
+        <button className="px-6" onClick={() => setLogIn(false)}>
           <Link to="/login">Login</Link>{" "}
         </button>
       ) : (
-        <button onClick={() => setLogIn(true)}>LogOut </button>
+        <button className="px-6" onClick={() => setLogIn(true)}>
+          LogOut{" "}
+        </button>
       )}
     </div>
   );

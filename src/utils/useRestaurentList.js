@@ -15,7 +15,7 @@ const useRestaurentList = () => {
     setFilterRestaurent(json?.data?.cards[2]?.data?.data?.cards);
   }
 
-  return [listOfRestaurent, filterRestaurent];
+  return [listOfRestaurent, filterRestaurent, setFilterRestaurent];
 };
 
 export default useRestaurentList;
