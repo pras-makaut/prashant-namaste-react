@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constant";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [logIn, setLogIn] = useState(true);
   const { user } = useContext(UserContext);
+
+  const cartItems = useSelector((state) => state.cart.items);
 
   return (
     <div className="flex justify-between bg-pink-50">
@@ -24,10 +27,11 @@ const Header = () => {
           <li className="px-2">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li className="px-2">Cart</li>
+
           <li className="px-2">
             <Link to="/instamart">Instamart</Link>
           </li>
+          <li className="px-2">Cart {cartItems.length} items</li>
         </ul>
       </div>
       {user.name}
