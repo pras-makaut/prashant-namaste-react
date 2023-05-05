@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constant";
-import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 
@@ -14,7 +13,12 @@ const Header = () => {
   return (
     <div className="flex justify-between bg-pink-50">
       <div className="logoContainer">
-        <img className="h-28 p-2 w-auto" src={LOGO_URL} alt="" />
+        <img
+          data-testid="logo"
+          className="h-28 p-2 w-auto"
+          src={LOGO_URL}
+          alt=""
+        />
       </div>
       <div className="nav-items">
         <ul className="flex py-10">
@@ -31,7 +35,11 @@ const Header = () => {
           <li className="px-2">
             <Link to="/instamart">Instamart</Link>
           </li>
-          <li className="px-2">Cart {cartItems.length} items</li>
+          <li className="px-2">
+            <Link to="/cart" data-testid="cart">
+              Cart {cartItems.length} items
+            </Link>
+          </li>
         </ul>
       </div>
       {user.name}

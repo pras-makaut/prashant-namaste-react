@@ -1,6 +1,6 @@
 const Shimmer = () => {
   return (
-    <div className="res-container">
+    <div data-testid="shimmer">
       {Array(10)
         .fill("")
         .map((e, index) => (
